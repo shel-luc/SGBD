@@ -1,0 +1,6 @@
+create table payroll(PAY_ID INT(11) NOT NULL AUTO_INCREMENT,
+ Nom char(100) NOT NULL,
+  Prenom char(100) NOT NULL,
+  CIN CHAR(25) NOT NULL,
+  PRIMARY KEY(PAY_ID),
+   FOREIGN KEY(CIN) REFERENCES membre(CIN))membre;
